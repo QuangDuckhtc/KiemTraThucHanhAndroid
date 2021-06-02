@@ -4,6 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FACA00"
     tools:context=".Manager">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="413dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="80dp"
+        android:background="#E8D18D"
+        android:gravity="center_horizontal"
+        android:text="MANAGER"
+        android:textAlignment="center"
+        android:textColor="#070606"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="321dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="72dp"
+        android:background="#100F0F"
+        android:text="SHOW INFOMATION"
+        app:backgroundTint="#090909"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="317dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="56dp"
+        android:text="ADD PRODUCT"
+        app:backgroundTint="#100F0F"
+        app:layout_constraintEnd_toEndOf="@+id/btn_show"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_show"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="110dp"
+        android:layout_height="64dp"
+        android:text="LOGOUT"
+        app:backgroundTint="#121111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add"
+        app:layout_constraintVertical_bias="0.662" />
 </androidx.constraintlayout.widget.ConstraintLayout>
