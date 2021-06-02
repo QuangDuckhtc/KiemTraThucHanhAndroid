@@ -2,28 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_exit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FACA00"
     android:hapticFeedbackEnabled="false"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
 
-        android:textAlignment="center"
         android:id="@+id/textView"
         android:layout_width="136dp"
         android:layout_height="59dp"
         android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
         android:text="LOGIN"
+        android:textAlignment="center"
         android:textColor="#0E0E0E"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_horizontal" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/pl_email"
@@ -94,19 +95,21 @@
         app:layout_constraintTop_toTopOf="@+id/pl_password"
         app:srcCompat="@drawable/pas" />
 
-    <TextView
-        android:id="@+id/tx_exit"
-        android:layout_width="65dp"
-        android:layout_height="50dp"
-        android:gravity="center_horizontal"
-        android:text="Exit"
-        android:textAlignment="center"
-        android:textColor="#050505"
-        android:textSize="25sp"
-        android:textStyle="bold"
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="104dp"
+        android:background="#FACA00"
+        android:text="EXIT"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:backgroundTint="#FACA00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Submit"
-        app:layout_constraintVertical_bias="0.697" />
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
