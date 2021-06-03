@@ -25,8 +25,8 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="302dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="96dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="Type"
         android:inputType="textPersonName"
@@ -42,7 +42,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="301dp"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Price"
@@ -57,53 +57,53 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="303dp"
-        android:layout_height="59dp"
+        android:layout_width="317dp"
+        android:layout_height="60dp"
         android:layout_marginTop="44dp"
         android:ems="10"
+
         android:hint="Country"
         android:inputType="textPersonName"
         android:paddingLeft="50dp"
         android:rotationX="9"
-        android:rotationY="12"
+        android:rotationY="5"
         android:textColorHint="#090909"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btn_save"
-        android:layout_width="285dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="76dp"
-        android:text="save"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="28dp"
+        android:text="create"
         android:textSize="18sp"
         app:backgroundTint="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_b1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_b1"
-        android:layout_width="279dp"
-        android:layout_height="58dp"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
         android:text="back"
         android:textSize="18sp"
         app:backgroundTint="#100F0F"
         app:layout_constraintBottom_toTopOf="@+id/btn_delete"
         app:layout_constraintEnd_toEndOf="@+id/btn_save"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toStartOf="@+id/btn_save"
-        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_save" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="33dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
@@ -113,7 +113,7 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="26dp"
-        android:layout_height="33dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
@@ -122,7 +122,7 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="31dp"
-        android:layout_height="38dp"
+        android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName"
@@ -130,12 +130,15 @@
 
     <Button
         android:id="@+id/btn_delete"
-        android:layout_width="276dp"
-        android:layout_height="63dp"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
         android:text="Delete"
         android:textSize="18sp"
         app:backgroundTint="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_b1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_b1"
-        tools:layout_editor_absoluteY="649dp" />
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,22 @@ public class Addproduct extends AppCompatActivity {
         btn_b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent()
+                Intent intent = new Intent(Addproduct.this, Manager.class);
+                startActivity(intent);
+            }
+        });
+        btn_save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Addproduct.this, Infomation.class);
+                startActivity(intent);
+            }
+        });
+        btn_delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Addproduct.this, DeleteProduct.class);
+                startActivity(intent);
             }
         });
     }
